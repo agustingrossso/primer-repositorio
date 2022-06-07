@@ -2,11 +2,57 @@
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
-    background-color: bisque;
+    background: rgb(17,78,82);
+    border-radius: 13px;
+    animation-name: movimento;
+    animation-duration: 3s;
 
 }
 
+
 h2{
-    font-family: sans-serif;
-    color: crimson;
+    font-family:Helvetica, sans-serif;
+    color: rgba(17, 127, 212, 0.739);
+}
+
+p{
+    font-family: Impact, sans-serif;
+    color: white;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform:scale(1.5)
+}
+
+@keyframes movimento{
+    0%{
+        width: 350px;
+    }
+
+    25%{
+        width: 400px;
+        background-color: #289098;
+    }
+
+    50%{
+        width: 450px;
+        background-color: #224c98;
+    }
+
+    75%{
+        width: 500px;
+        background-color: #7e4047;
+    }
+
+    100%{
+        width: 550px;
+        background-color: #c82d2d;
+    }
 }
